@@ -1,0 +1,32 @@
+.container {
+    border: 5px solid red;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    /* ... */
+    display: flex;
+}
+
+
+/* make media query where if the Item 2 div on the right
+falls below a certain percent(?) of the page, get rid of the image
+and bring the image back when Item 2's width returns to minimum */
+
+.my_div {
+    border: 5px solid black;
+}
+
+.div1 {
+    width: 40%;
+    overflow: auto;
+    min-width: 285px;
+}
+
+.div2 {
+    width: 60%;
+}
+
+.bg_design {
+    width: 100%;
+    height: 100%;
+}
