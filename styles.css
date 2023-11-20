@@ -56,5 +56,11 @@ and bring the image back when Item 2's width returns to minimum */
 
 /* FORM FIELDS */
 
+.form_container {
+    background-color: rgb(193, 221, 193);
+    padding: 30px;
+    opacity: 50%;
+}
+
 
 /* FORM LOGIN */
