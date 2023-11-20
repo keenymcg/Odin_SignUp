@@ -20,10 +20,13 @@ and bring the image back when Item 2's width returns to minimum */
     width: 40%;
     overflow: auto;
     min-width: 285px;
+    max-width: 385px;
 }
 
 .div2 {
     width: 60%;
+    min-width: 400px;
+    max-width: 620px;
 }
 
 .bg_design {
