@@ -19,6 +19,11 @@ button {
     font-weight: 400;
 }
 
+.font_small {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+}
+
 /* MAIN CONTAINER */
 
 .container {
@@ -41,17 +46,24 @@ and bring the image back when Item 2's width returns to minimum */
 .my_div {
 }
 
-.div1 {
+img {
+    border-radius: 10px 0px 0px 10px;
+    min-width: 320px;
+    max-width: 320px;
+}
+
+/* .div1 {
     width: 40%;
     overflow: auto;
     min-width: 285px;
     max-width: 385px;
     border-radius: 10px 0px 0px 10px;
-}
+} */
 
 .div2 {
+    position: relative;
     width: 60%;
-    min-width: 400px;
+    min-width: 445px;
     max-width: 620px;
     border-radius: 0px 10px 10px 0px;
     background-color: antiquewhite;
@@ -59,7 +71,7 @@ and bring the image back when Item 2's width returns to minimum */
 
 .bg_design {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 /* FORM PARAGRAPHS */
@@ -116,8 +128,22 @@ button {
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
+    transition: background-color 0.1s, font-style 0.1s;
+}
+
+button:hover {
+    background-color: rgb(101, 146, 101);
+    transition: background-color 0.1s, font-style 0.1s;
 }
 
 .hyperlink {
     color: rgb(42, 185, 42);
+}
+
+.git_link {
+    margin-top: 50px;  
+    opacity: 70%;
+    position: absolute;
+    bottom: 5px;
+    font-size: 0.8rem;
 }
