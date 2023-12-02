@@ -94,7 +94,6 @@ img {
 .form_container {
     background-color: rgb(193, 221, 193);
     padding: 30px 0px;
-    opacity: 50%;
 }
 
 .form_row {
@@ -112,13 +111,23 @@ img {
     margin-right: 70px;
 }
 
+label {
+    opacity: 50%;
+}
+
 input {
     padding: 3px;
     /* box-shadow: 1px 1px 3px; */
+    border: 0.2px solid rgb(193, 190, 190);
+    border-radius: 3px;
 }
 
 input:focus {
     border: 0.5px solid blue;
+}
+
+input::placeholder {
+    color: rgb(178, 178, 178);
 }
 
 /* FORM LOGIN BUTTON */
