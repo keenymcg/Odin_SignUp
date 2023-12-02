@@ -85,7 +85,7 @@ img {
 }
 
 .forms:first-child {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .para2 {
@@ -100,9 +100,13 @@ img {
     opacity: 50%;
 }
 
-.form-row {
+.form_row {
     display: flex;
-    margin: 7px 0px 0px 30px;
+    margin: 0px 0px 0px 30px;
+}
+
+.sub_rows {
+    margin: 25px 0px 0px 30px;
 }
 
 .field {
@@ -114,6 +118,10 @@ img {
 input {
     padding: 3px;
     /* box-shadow: 1px 1px 3px; */
+}
+
+input:focus {
+    border: 0.5px solid blue;
 }
 
 /* FORM LOGIN BUTTON */
