@@ -10,8 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-
-    <!-- <script defer src="main.js"></script> -->
+    
+    <!-- <script defer src="script.js"></script> -->
     <!-- for when it's time to link password matching JS -->
     <div class="container"> 
         <img class="bg_design" src="/images/bg.png" alt="background image">
@@ -88,14 +88,16 @@
                         id="password" 
                         title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        name="password"
                         required />
                     </div>
                     <div class="field">
-                        <label for="password">Retype Password:</label>
-                        <input type="text" 
-                        title="Must match the first password."
-                        
+                        <label for="retypePassword">Retype Password:</label>
+                        <input type="text"
+                        id="retypePassword"
+                        name="retypePassword"
                         required />
+                        <span id="passwordMatchMessage" class="error-message">hey</span>
                     </div>
                 </div>
             </div>
@@ -108,6 +110,5 @@
 
         </div>
     </div>   
-
 </body>
 </html>
