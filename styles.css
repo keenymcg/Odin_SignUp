@@ -2,6 +2,9 @@ html {
     background-color: rgba(73, 105, 73, 0.672);
 }
 
+
+
+
 /* FONTS */
 
 .main_font {
@@ -23,6 +26,9 @@ button {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
 }
+
+
+
 
 /* MAIN CONTAINER */
 
@@ -89,6 +95,8 @@ img {
     margin-bottom: 30px;
 }
 
+
+
 /* FORM CONTAINER/FIELDS */
 
 .form_container {
@@ -115,6 +123,8 @@ label {
     opacity: 50%;
 }
 
+/* INPUTS */
+
 input {
     padding: 3px;
     /* box-shadow: 1px 1px 3px; */
@@ -129,6 +139,16 @@ input:focus {
 input::placeholder {
     color: rgb(178, 178, 178);
 }
+
+/* input:valid {
+    border: 2px solid rgb(8, 214, 8);
+}
+
+input:invalid {
+    border: 2px solid red;
+} */
+
+
 
 /* FORM LOGIN BUTTON */
 

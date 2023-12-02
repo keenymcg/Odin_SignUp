@@ -43,37 +43,65 @@
                 <div class="form_row first_row">    
                     <div class="field">
                         <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" placeholder="Bob" required>
+                        <input type="text" 
+                        id="first_name" 
+                        placeholder="Bob"
+                        minlength="1" 
+                        maxlength="15"
+                        title="Type your first name."
+                        required />
                     </div>
                     <div class="field">
                         <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name" placeholder="Bobbington">
+                        <input type="text" 
+                        id="last_name" 
+                        placeholder="Bobbington"
+                        minlength="1" 
+                        maxlength="15"
+                        title="Type your last name." 
+                        required/>
                     </div>
                 </div>
                 <div class="form_row sub_rows">
                     <div class="field">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" placeholder="bob@bob.bob" required>
+                        <input type="text" 
+                        id="email" 
+                        placeholder="bob@bob.bob" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Enter your email."
+                        required />
                     </div>
                     <div class="field">
                         <label for="phone">Phone Number:</label>
-                        <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required>
+                        <input type="text" 
+                        id="phone" 
+                        placeholder="xxx-xxx-xxxx"
+                        title="Enter your phone number." 
+                        required />
                     </div>
                 </div>
                 <div class="form_row sub_rows">   
                     <div class="field">
                         <label for="password">Password:</label>
-                        <input type="text" id="password" required>
+                        <input type="text" 
+                        id="password" 
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        required />
                     </div>
                     <div class="field">
                         <label for="password">Retype Password:</label>
-                        <input type="text" required>
+                        <input type="text" 
+                        title="Must match the first password."
+                        
+                        required />
                     </div>
                 </div>
             </div>
             
             <div class="button_container">
-                <button>Create Account</button>
+                <button title="Click to create your account.">Create Account</button>
                 <p class="main_font">Already have an account? <a href="https://www.youtube.com/watch?v=2v39YzT8AAQ" class="hyperlink">Log in</a></p>
                 <p class="font_small git_link">Created with HTML & CSS <a href="https://keenymcg.github.io/Odin_SignUp/" class="hyperlink">by Keenan M.</a></p>
             </div>
