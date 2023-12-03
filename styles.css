@@ -152,9 +152,6 @@ input:invalid {
     font-size: 0.7rem;
     font-style: italic;
     font-family: 'Poppins', sans-serif;
-    color: rgb(251, 99, 99);
-    position: absolute;
-    padding-top: 40px;
 }
 
 
