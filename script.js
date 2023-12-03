@@ -1,10 +1,56 @@
+
+function inputBorder(boolean, inputType) {
+    if (boolean) {
+        inputType.style.border = "2px solid rgb(8, 214, 8)";
+    } else {
+        inputType.style.border = "2px solid red";
+    };
+};
+
+
+// NAMES
+
+const fNameInput = document.getElementById("first_name");
+
+fNameInput.addEventListener("input", function() {
+    let timeoutId;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(function () {
+        const fNamePattern = /^[a-zA-Z]+$/;
+        const isFNameValid = fNamePattern.test(fNameInput.value);
+        inputBorder(isFNameValid, fNameInput);
+    }, 300);
+});
+
+const lNameInput = document.getElementById("last_name");
+
+lNameInput.addEventListener("input", function() {
+    let timeoutId;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(function () {
+        const lNamePattern = /^[a-zA-Z]+$/;
+        const isLNameValid = lNamePattern.test(lNameInput.value);
+        inputBorder(isLNameValid, lNameInput);
+    }, 300);
+});
+
+
 // EMAIL FORMAT
 const emailInput = document.getElementById("email");
 
+emailInput.addEventListener("input", function() {
+    let timeoutId;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(function () {
+        const emailPattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        const isEmailValid = emailPattern.test(emailInput.value);
+        inputBorder(isEmailValid, emailInput);
+    }, 200);
+});
 
 
 // PHONE NUMBER
-
+// Done via inline JS in the HTML phone-input 
 
 
 // PASSWORD MATCHING
@@ -20,12 +66,7 @@ passwordInput.addEventListener("input", function () {
     timeoutId = setTimeout(function () {
         const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
         const isPasswordValid = passwordPattern.test(passwordInput.value);
-
-        if (isPasswordValid) {
-            passwordInput.style.border = "2px solid rgb(8, 214, 8)";
-        } else {
-            passwordInput.style.border = "2px solid red";
-        }
+        inputBorder(isPasswordValid, passwordInput);
     }, 1000);
 });
 
